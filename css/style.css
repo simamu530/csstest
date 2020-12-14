@@ -1,0 +1,450 @@
+@charset "UTF-8";
+
+/* リセットcss */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input,
+select {
+  vertical-align: middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+.header {
+  height: 70px;
+  background-color: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul {
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+}
+
+#eyecatch {
+  height: 600px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#eyecatch h1 {
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-style: italic;
+  font-weight: bold;
+  color: #ccc;
+  line-height: 1;
+}
+
+.news {
+  width: 100px;
+  height: 50px;
+  background: #000;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.news h3 {
+  color: #ccc;
+  font-weight: bold;
+}
+
+.news-date {
+  width: 500px;
+  height: 50px;
+  background: #f2f2f2;
+  position: absolute;
+  right: 100px;
+  bottom: 0px;
+}
+
+.news-date p {
+  color: #000;
+  text-align: left;
+  font-size: 15px;
+}
+
+.about {
+  height: 600px;
+  background-color: #000;
+  position: relative;
+}
+
+.about h2 {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 40%;
+  left: 30%;
+  transform: translate(-50%, -50%);
+}
+
+.about p {
+  color: white;
+  width: 950px;
+  height: 300px;
+  position: absolute;
+  top: 70%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+}
+
+.about-img {
+  width: 700px;
+  height: 400px;
+  position: relative;
+  top: 40%;
+  left: 60%;
+}
+
+.service {
+  height: 1400px;
+  position: relative;
+  background-color: grey;
+  margin: 100px 0px;
+}
+
+.service h4 {
+  text-align: center;
+  font-size: 30px;
+  padding: 20px 20px;
+}
+
+.card-wrap {
+  background-color: white;
+  width: 600px;
+  height: 200px;
+  padding: 30px;
+  line-height: 20px;
+  left: 60px;
+  position: absolute;
+  left: 500px;
+  top: 200px;
+}
+
+.card-wrap2 {
+  background-color: white;
+  width: 600px;
+  height: 200px;
+  padding: 30px;
+  line-height: 20px;
+  left: 60px;
+  position: absolute;
+  left: 600px;
+  bottom: 300px;
+}
+
+.card-content,
+.card-title {
+  padding: 10px;
+}
+
+.service-img1 {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  right: 0px;
+}
+
+.service-img2 {
+  width: 800px;
+  height: auto;
+  position: absolute;
+  left: 0px;
+  bottom: 200px;
+}
+
+.detail-button {
+  position: relative;
+  top: 20px;
+  left: 400px;
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  font-size: 14px;
+  color: #000000;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  border: 1px #000000 solid; /* 境界線を引く */
+  border-radius: 3px; /* 要素の角を丸くする */
+  transition: 0.4s ease; /* スタイルが変化する時間 */
+}
+
+.detail-button:hover {
+  color: #fff;
+  background: #000000;
+}
+
+.company-recruit {
+  display: flex;
+  justify-content: space-between;
+  height: 400px;
+  width: 0 auto;
+}
+.company {
+  width: 600px;
+  height: 300px;
+  background-image: url(../img/company.jpeg);
+}
+.recruit {
+  width: 600px;
+  height: 300px;
+  background-image: url(../img/recruit.jpg);
+}
+
+.cr-title {
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+}
+
+.cr-japanese {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  margin: 30px 30px 30px 30px;
+}
+
+.question {
+  height: 100px;
+  width: auto;
+  background-color: #000;
+  margin: 0 10% 10% 10%;
+  color: white;
+}
+
+.faq {
+  float: left;
+  margin: 40px 40px 30px 40px;
+  font-size: 30px;
+}
+
+.faq2 {
+  padding: 50px 700px;
+}
+
+.contact-wrap {
+  height: 700px;
+  background-image: url(../img/contact-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  padding: 10% 0 0 0;
+}
+
+.contact-button {
+  position: relative;
+  top: 20px;
+  left: 0px;
+  padding: 5px 20px; /* 上下に5px、左右に20px */
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none; /* テキストのスタイルを消す */
+  cursor: pointer;
+  border: 1px #ffffff solid; /* 境界線を引く */
+  border-radius: 3px; /* 要素の角を丸くする */
+  transition: 0.4s ease; /* スタイルが変化する時間 */
+}
+
+.copyright-wrap {
+  background-color: #000;
+  height: 30px;
+  text-align: center;
+}
+
+.copyright {
+  color: white;
+  font-size: 15px;
+}
